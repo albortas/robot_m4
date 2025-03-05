@@ -11,9 +11,9 @@ from math import pi, sin, cos
 import numpy as np
 import pygame
 
-from robot.utilities.trama import xyz_rotation_matrix, new_coordinates
-from robot.utilities.cinematica import FK
-from robot.utilities.parametros import *
+from src.utilities.operadores import xyz_rotation_matrix, new_coordinates
+from src.utilities.cinematica import FK
+from src.utilities.parametros import *
 
 pygame.init()
 screen = pygame.display.set_mode((600, 600)) 

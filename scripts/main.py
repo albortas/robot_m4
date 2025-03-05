@@ -1,16 +1,5 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-
-"""
-@author: Arnaud Villeneuve
-
-This file contains the main program to run the Spotmicro Controller
-
-"""
- 
-
 from time import sleep
-from math import pi, atan2, sqrt
+from math import pi, cos, sin, atan2, sqrt
 import numpy as np
 
 import pygame
@@ -18,15 +7,15 @@ pygame.init()
 screen = pygame.display.set_mode((600, 600)) 
 pygame.display.set_caption("SPOTMICRO")
 
-from robot.utilities.trama import *
-from robot.utilities.cinematica import IK,FK
-from robot.utilities.parametros import *
+from src.utilities.operadores import *
+from src.utilities.cinematica import IK,FK
+from src.utilities.parametros import *
 
-from robot.movimiento import caminar
-Spot = caminar.Robot()
+from src.movimiento import caminar_v2
+Spot = caminar_v2.Robot()
 
-from robot.centro_gravedad.Spotmicro_Gravity_Center_Library_v01 import *
-from robot.Animacion import Spotmicro_Animation_Library_v01
+from src.centro_gravedad.Spotmicro_Gravity_Center_Library_v01 import *
+from src.Animacion import Spotmicro_Animation_Library_v01
 SpotAnim = Spotmicro_Animation_Library_v01.SpotAnim()
 
 

@@ -1,5 +1,5 @@
 from math import pi,sin,asin,cos,atan,acos,sqrt
-from robot.utilities.parametros import *
+from src.utilities.parametros import *
 
 def IK(x, y, z, side):  # Inverse Kinematics
     """

@@ -9,8 +9,8 @@ and distance to the support polygon edge
 """
 
 from math import sqrt
-from robot.utilities.cinematica import FK_Weight
-from robot.utilities.parametros import *
+from src.utilities.cinematica import FK_Weight
+from src.utilities.parametros import *
 
 
 def CG_calculo (thetalf,thetarf,thetarr,thetalr):
