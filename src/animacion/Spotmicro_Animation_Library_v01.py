@@ -11,7 +11,7 @@ from math import pi, sin, cos
 import numpy as np
 import pygame
 
-from src.utilities.operadores import xyz_rotation_matrix, new_coordinates
+from src.utilities.transformaciones import xyz_rotation_matrix, new_coordinates
 from src.utilities.cinematica import FK
 from src.utilities.parametros import *
 

@@ -7,7 +7,7 @@ pygame.init()
 screen = pygame.display.set_mode((600, 600)) 
 pygame.display.set_caption("SPOTMICRO")
 
-from src.utilities.operadores import *
+from src.utilities.transformaciones import *
 from src.utilities.cinematica import IK,FK
 from src.utilities.parametros import *
 
@@ -15,7 +15,7 @@ from src.movimiento import caminar_v2
 Spot = caminar_v2.Robot()
 
 from src.centro_gravedad.Spotmicro_Gravity_Center_Library_v01 import *
-from src.Animacion import Spotmicro_Animation_Library_v01
+from src.animacion import Spotmicro_Animation_Library_v01
 SpotAnim = Spotmicro_Animation_Library_v01.SpotAnim()
 
 

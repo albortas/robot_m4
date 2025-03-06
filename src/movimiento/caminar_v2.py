@@ -1,6 +1,6 @@
 from math import pi, sin, cos, atan2, sqrt
 import numpy as np
-from src.utilities.operadores import xyz_rotation_matrix, new_coordinates
+from src.utilities.transformaciones import xyz_rotation_matrix, new_coordinates
 from src.utilities.parametros import *
 
 
